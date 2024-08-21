@@ -1,0 +1,23 @@
+{
+  "name": "modern-html-css",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '*.css, *.html' -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/modern-html-css.git"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/modern-html-css/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/modern-html-css#readme",
+  "dependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}

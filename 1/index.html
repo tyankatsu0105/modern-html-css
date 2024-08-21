@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>気になるhtml要素</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <details>
+      <summary>detailsの中は一つsummary要素を入れないとだめ</summary>
+      <div>
+        <p>それ以外はフロー・コンテンツ入れられる</p>
+        <ul>
+          <li>こんな</li>
+          <li>感じ</li>
+        </ul>
+      </div>
+    </details>
+    <details open>
+      <summary><strong>最初から開いた状態にも可能</strong></summary>
+      <div>
+        <p>あいうえお</p>
+        <p>かきくけこ</p>
+        <p>さしすせそ</p>
+      </div>
+    </details>
+
+    <button id="js-open-dialog">open dialog</button>
+
+    <dialog id="dialog">
+      <p>dialog要素はモーダルダイアログを作成するための要素</p>
+      <form><button formmethod="dialog" autofocus>閉じる</button></form>
+      <!-- <form method="dialog">
+        <button>閉じる</button>
+      </form> -->
+    </dialog>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
